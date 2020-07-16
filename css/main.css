@@ -483,16 +483,16 @@ a:focus {
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
   overflow: hidden;
-  height: 60px;
 }
 .navbar-default .first a {
   border-radius: 0 0 0 5px;
 }
 .navbar-default .navbar-brand {
+  margin-top: -15px;
   margin-right: 50px;
   margin-left: 20px;
-  width: 200px;
-  height: 60px;
+  width: 320px;
+  height: 70px;
 }
 .navbar-default .navbar-nav > li {
   margin-left: 1px;
