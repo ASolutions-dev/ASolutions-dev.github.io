@@ -74,19 +74,19 @@ a:focus {
 }
 
 #first-main-item {
-  background-image: url(../images/slider-bg-1.jpg);
+  background-image: url(../images/slider-bg-1-grayed.jpg);
 }
 
 #second-main-item {
-  background-image: url(../images/slider-bg-2.jpg);
+  background-image: url(../images/slider-bg-2-grayed.jpg);
 }
 
 #third-main-item {
-  background-image: url(../images/slider-bg-3.jpg);
+  background-image: url(../images/slider-bg-3-grayed.jpg);
 }
 
 #fourth-main-item {
-  background-image: url(../images/slider-bg-4.jpg);
+  background-image: url(../images/slider-bg-4-grayed.jpg);
 }
 
 #main-slider .item:first-child {
