@@ -27,7 +27,7 @@ a {
   border: 0;
 }
 .btn.btn-primary {
-  background-color: grey;
+  background-color: #a7977d;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary.active {
@@ -52,8 +52,6 @@ a:focus {
 }
 #main-slider {
   color: #fff;
-  border-radius: 0px 0px 20px 20px;
-  overflow: hidden;
 }
 
 #main-slider .item {
@@ -76,19 +74,19 @@ a:focus {
 }
 
 #first-main-item {
-  background-image: url(../images/slider-bg-1-grayed.jpg);
+  background-image: url(../images/slider-bg-1-2.jpg);
 }
 
 #second-main-item {
-  background-image: url(../images/slider-bg-2-grayed.jpg);
+  background-image: url(../images/slider-bg-2-2.jpg);
 }
 
 #third-main-item {
-  background-image: url(../images/slider-bg-3-grayed.jpg);
+  background-image: url(../images/slider-bg-3-2.jpg);
 }
 
 #fourth-main-item {
-  background-image: url(../images/slider-bg-4-grayed.jpg);
+  background-image: url(../images/slider-bg-4-2.jpg);
 }
 
 #main-slider .item:first-child {
@@ -503,7 +501,7 @@ a:focus {
 .navbar-default .navbar-nav > li.active:hover > a:focus,
 .navbar-default .navbar-nav > li:hover > a:focus,
 .navbar-default .navbar-nav > li:focus > a:focus {
-  background-color: grey;
+  background-color: #a7977d;
   color: #fff;
 }
 .icon-lg {
