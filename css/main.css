@@ -484,12 +484,16 @@ a:focus {
   border-radius: 0 0 0 5px;
 }
 .navbar-default .navbar-brand {
-  margin-top: -15px;
-  margin-right: 50px;
-  margin-left: 20px;
-  width: 320px;
+  font-size: 17px;
+  padding: 0px 0px;
+  margin-left: 0px;
   height: 70px;
 }
+
+.navbar-nav {
+  margin-left: 50px;
+}
+
 .navbar-default .navbar-nav > li {
   margin-left: 1px;
 }
