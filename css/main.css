@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  color: #999;
+  color: #5d4e4e;
 }
 h1,
 h2,
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #777;
+  color: #585252;
   font-weight: 300;
 }
 a {
@@ -87,6 +87,17 @@ a:focus {
 
 #fourth-main-item {
   background-image: url(../images/slider-bg-4-2.jpg);
+}
+
+#description-image-1 {
+  height: 270px;
+  box-shadow: 100px 0px 60px black inset;
+  background-image: url(../images/description2.jpg);
+}
+
+#description-image-2 {
+  height: 330px;
+  background-image: url(../images/description1.jpg);
 }
 
 #main-slider .item:first-child {
