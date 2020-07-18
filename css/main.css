@@ -206,7 +206,7 @@ a:focus {
   margin: 0;
 }
 .portfolio-items {
-  margin-right: -20px;
+  margin-left: 20px;
 }
 .portfolio-filter {
   margin-bottom: 50px;
@@ -227,7 +227,7 @@ a:focus {
   width: 33%;
 }
 .portfolio-items.col-4 > li {
-  width: 25%;
+  width: 24%;
 }
 .portfolio-items.col-5 > li {
   width: 20%;
@@ -236,10 +236,10 @@ a:focus {
   width: 16%;
 }
 .portfolio-item .item-inner {
-  margin: 0 20px 20px 0;
+  /* margin: 0 20px 20px 0; */
   text-align: center;
   background: #fff;
-  padding: 10px;
+  /* padding: 10px; */
   border-bottom: 1px solid #e1e1e1;
 }
 .portfolio-item img {
