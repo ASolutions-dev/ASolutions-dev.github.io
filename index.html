@@ -14,6 +14,8 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <script src="js/carousel-items.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -22,6 +24,7 @@
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <div id="app" class="experiment-block">
     <header id="header" role="banner">
         <div class="container">
             <div id="navbar" class="navbar navbar-default">
@@ -50,38 +53,14 @@
 
     <section id="main-slider" class="carousel">
         <div class="carousel-inner">
-            <div id="first-main-item" class="item active d-block w-100">
+            <div v-for="carouselItem in carouselItemList" :class="carouselItem.class" :style="carouselItem.style">
                 <div class="container">
                     <div class="carousel-content">
-                        <h1>Schody i balustrady</h1>
-                        <p class="lead">Profesjonalne wykonanie według indywidualnych zamówień</p>
+                    <h1>{{carouselItem.title}}</h1>
+                        <p class="lead">{{carouselItem.description}}</p>
                     </div>
                 </div>
-            </div><!--/.item-->
-            <div id="third-main-item" class="item">
-                <div class="container">
-                    <div class="carousel-content">
-                        <h1>Schody samonośne</h1>
-                        <p class="lead">Wytrzymałe i eleganckie konstrukcje</p>
-                    </div>
-                </div>
-            </div><!--/.item-->
-            <div id="fourth-main-item" class="item">
-                <div class="container">
-                    <div class="carousel-content">
-                        <h1>Schody na beton</h1>
-                        <p class="lead">Klasyczne rozwiązania na lata</p>
-                    </div>
-                </div>
-            </div><!--/.item-->
-            <div id="second-main-item" class="item">
-                <div class="container">
-                    <div class="carousel-content">
-                        <h1>Balustrady</h1>
-                        <p class="lead">Mnogość materiałów i projektów</p>
-                    </div>
-                </div>
-            </div><!--/.item-->
+            </div>
         </div><!--/.carousel-inner-->
         <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
         <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
@@ -306,5 +285,17 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+</div>
+
+<script>
+    var vueApp = new Vue(
+        {
+            el: '#app',
+            data: {
+                carouselItemList: carouselItems
+            }
+        });
+</script>
+
 </body>
 </html>
