@@ -14,8 +14,6 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <script src="js/carousel-items.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -25,277 +23,200 @@
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
     <div id="app" class="experiment-block">
-    <header id="header" role="banner">
-        <div class="container">
-            <div id="navbar" class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/ico/apple-touch-icon-57-precomposed.png">Usługi Stolarskie Jan Ziopaja</img>
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#main-slider">Strona główna</a></li>
-                        <li><a href="#about">O firmie</a></li>
-                        <li><a href="#works">Realizacje</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header><!--/#header-->
-
-    <section id="main-slider" class="carousel">
-        <div class="carousel-inner">
-            <div v-for="carouselItem in carouselItemList" :class="carouselItem.class" :style="carouselItem.style">
-                <div class="container">
-                    <div class="carousel-content">
-                    <h1>{{carouselItem.title}}</h1>
-                        <p class="lead">{{carouselItem.description}}</p>
+        <header id="header" role="banner">
+            <div class="container">
+                <div id="navbar" class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/ico/apple-touch-icon-57-precomposed.png">Usługi Stolarskie Jan Ziopaja</img>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#main-slider">Strona główna</a></li>
+                            <li><a href="#about">O firmie</a></li>
+                            <li><a href="#works">Realizacje</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div><!--/.carousel-inner-->
-        <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
-        <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
-    </section><!--/#main-slider-->
+        </header><!--/#header-->
 
-    <section id="about">
-        <div class="container">
-            <div class="box first">
-                <div class="center gap">
-                    <h2>O firmie</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6" style="text-align: justify; font-size: 16px;">
-                        Posiadamy ponad 20-letnie doświadczenie w branży stolarskiej. Specjalizujemy się w profesjonalnym projektowaniu, wykonaniu i montażu schodów i balustrad.<br/><br/>
-                        Pomyślnie zrealizowaliśmy niezliczoną ilość zamówień, zakończonych pełną satysfakcją i zadowoleniem u naszych klientów. Do każdego zlecenia podchodzimy indywidualnie.
-                    </div>
-                    <div class="col-sm-6">    
-                        <img src="images/description2.jpg" class="img-thumbnail" alt="Responsive image">    
+        <section id="main-slider" class="carousel">
+            <div class="carousel-inner">
+                <div v-for="carouselItem in carouselItemList" :class="carouselItem.class" :style="carouselItem.style">
+                    <div class="container">
+                        <div class="carousel-content">
+                        <h1>{{carouselItem.title}}</h1>
+                            <p class="lead">{{carouselItem.description}}</p>
+                        </div>
                     </div>
                 </div>
-                <br/><br/><br/><br/><br/>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img src="images/description1.jpg" class="img-thumbnail" alt="Responsive image">   
+            </div><!--/.carousel-inner-->
+            <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
+            <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
+        </section><!--/#main-slider-->
+
+        <section id="about">
+            <div class="container">
+                <div class="box first">
+                    <div class="center gap">
+                        <h2>O firmie</h2>
                     </div>
-                    <div class="col-sm-6" style="text-align: justify; font-size: 16px;">
-                        Nasze usługi świadczymy na terenie całego województwa świętokrzyskiego.<br/><br/>
-                        Zapewniamy bezpłatny pomiar, doradztwo oraz wycenę, by zapewnić bezproblemową i jasną realizację projektów.
-                        <br/><br/>
-                        Szeroki wahlarz najwyższej jakości materiałów pozwoli na wyjątkową personalizację zamówień.<br/><br/>
-                        Schody i balustrady wykonamy według indywidualnego projektu ustalonego bezpośrednio z Państwem, następnie dowieziemy je na miejsce i sprawnie zamontujemy.
-                        Służymy pomocą w razie problemów i podpowiadamy jak zadbać o materiały, by nasze dzieła mogły Państwa cieszyć przez wiele lat.
-                    </div>
-                </div>
-                <br/><br/><br/><br/><br/>
-                <div class="row" style="text-align: center">
                     <div class="row">
-                        <p class="lead" style="font-size: 30px !important;">Specjalizujemy się w:</p>
+                        <div class="col-sm-6" style="text-align: justify; font-size: 16px;">
+                            Posiadamy ponad 20-letnie doświadczenie w branży stolarskiej. Specjalizujemy się w profesjonalnym projektowaniu, wykonaniu i montażu schodów i balustrad.<br/><br/>
+                            Pomyślnie zrealizowaliśmy niezliczoną ilość zamówień, zakończonych pełną satysfakcją i zadowoleniem u naszych klientów. Do każdego zlecenia podchodzimy indywidualnie.
+                        </div>
+                        <div class="col-sm-6">    
+                            <img src="images/description2.jpg" class="img-thumbnail" alt="Responsive image">    
+                        </div>
                     </div>
+                    <br/><br/><br/><br/><br/>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/description1.jpg" class="img-thumbnail" alt="Responsive image">   
+                        </div>
+                        <div class="col-sm-6" style="text-align: justify; font-size: 16px;">
+                            Nasze usługi świadczymy na terenie całego województwa świętokrzyskiego.<br/><br/>
+                            Zapewniamy bezpłatny pomiar, doradztwo oraz wycenę, by zapewnić bezproblemową i jasną realizację projektów.
+                            <br/><br/>
+                            Szeroki wahlarz najwyższej jakości materiałów pozwoli na wyjątkową personalizację zamówień.<br/><br/>
+                            Schody i balustrady wykonamy według indywidualnego projektu ustalonego bezpośrednio z Państwem, następnie dowieziemy je na miejsce i sprawnie zamontujemy.
+                            Służymy pomocą w razie problemów i podpowiadamy jak zadbać o materiały, by nasze dzieła mogły Państwa cieszyć przez wiele lat.
+                        </div>
+                    </div>
+                    <br/><br/><br/><br/><br/>
+                    <div class="row" style="text-align: center">
                         <div class="row">
-                        <div class="col-md-4">
-                            <div class="center">
-                                <img src="images/stairs/samonosne.png">
-                                <h4>Schody samonośne</h4>
-                            </div>
-                        </div><!--/.col-md-4-->
-                        <div class="col-md-4">
-                            <div class="center">
-                                <img src="images/stairs/beton.png">
-                                <h4>Schody "na beton"</h4>
-                            </div>
-                        </div><!--/.col-md-4-->
-                        <div class="col-md-4">
-                            <div class="center">
-                                <img src="images/stairs/balustrada.png">
-                                <h4>Balustrady</h4>
-                            </div>
-                        </div><!--/.col-md-4-->
+                            <p class="lead" style="font-size: 30px !important;">Specjalizujemy się w:</p>
+                        </div>
+                            <div class="row">
+                            <div class="col-md-4">
+                                <div class="center">
+                                    <img src="images/stairs/samonosne.png">
+                                    <h4>Schody samonośne</h4>
+                                </div>
+                            </div><!--/.col-md-4-->
+                            <div class="col-md-4">
+                                <div class="center">
+                                    <img src="images/stairs/beton.png">
+                                    <h4>Schody "na beton"</h4>
+                                </div>
+                            </div><!--/.col-md-4-->
+                            <div class="col-md-4">
+                                <div class="center">
+                                    <img src="images/stairs/balustrada.png">
+                                    <h4>Balustrady</h4>
+                                </div>
+                            </div><!--/.col-md-4-->
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#services-->
+            </div><!--/.container-->
+        </section><!--/#services-->
 
-    <section id="works">
-        <div class="container">
-            <div class="box">
-                <div class="center gap">
-                    <h2>Realizacje</h2>
-                    <p class="lead">
-                        Zapraszamy do zapoznania się z galerią przykładowych realizacji naszych projektów.<br/>
-                        Aktualne prezentacje najnowszych efektów naszej pracy można również znaleźć na <a href="https://facebook.com/uslugi.stolarskie.ziopaja">profilu Facebook</a>.
-                    </p>
-                </div><!--/.center-->
-                <ul class="portfolio-filter">
-                    <li><a class="btn btn-primary active" href="#" data-filter="*">Wszystkie</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".samonosne">Schody samonośne</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".beton">Schody na beton</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".balustrady">Balustrady</a></li>
-                </ul><!--/#portfolio-filter-->
-                <ul class="portfolio-items col-4 align-items-center">
-                    <li class="portfolio-item responsive samonosne">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img class="img-thumbnail" src="images/portfolio/thumb/samonosne1.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="" href="images/portfolio/full/samonosne1.jpg"><i class="icon-eye-open"></i></a>             
+        <section id="works">
+            <div class="container">
+                <div class="box">
+                    <div class="center gap">
+                        <h2>Realizacje</h2>
+                        <p class="lead">
+                            Zapraszamy do zapoznania się z galerią przykładowych realizacji naszych projektów.<br/>
+                            Aktualne prezentacje najnowszych efektów naszej pracy można również znaleźć na <a href="https://facebook.com/uslugi.stolarskie.ziopaja">profilu Facebook</a>.
+                        </p>
+                    </div><!--/.center-->
+                    <ul class="portfolio-filter">
+                        <li><a class="btn btn-primary active" href="#" data-filter="*">Wszystkie</a></li>
+                        <li><a class="btn btn-primary" href="#" data-filter=".samonosne">Schody samonośne</a></li>
+                        <li><a class="btn btn-primary" href="#" data-filter=".beton">Schody na beton</a></li>
+                        <li><a class="btn btn-primary" href="#" data-filter=".balustrady">Balustrady</a></li>
+                    </ul><!--/#portfolio-filter-->
+                    <ul class="portfolio-items col-4 align-items-center">
+                        <li v-for="portfolioItem in portfolioItemList" :class="portfolioItem.class">
+                            <div class="item-inner">
+                                <div class="portfolio-image">
+                                    <img class="img-thumbnail" :src="portfolioItem.thumbnail" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" :href="portfolioItem.image" title="" ><i class="icon-eye-open"></i></a>             
+                                    </div>
+                                </div>
+                                <h5></h5>
+                            </div>
+                        </li><!--/.portfolio-item-->
+                    </ul>   
+                </div><!--/.box-->
+            </div><!--/.container-->
+        </section><!--/#portfolio-->
+
+        <section id="contact">
+            <div class="container">
+                <div class="box last">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>Skontaktuj się z nami</h1>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <address>
+                                        <strong>Usługi Stolarskie Jan Ziopaja</strong><br>
+                                        Świętokrzyskie<br>
+                                        Kielce, Morawica<br>
+                                    </address>
                                 </div>
                             </div>
-                            <h5></h5>
-                        </div>
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item responsive samonosne">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img class="img-thumbnail" src="images/portfolio/thumb/samonosne2.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="" href="images/portfolio/full/samonosne2.jpg"><i class="icon-eye-open"></i></a>  
+                            <h1></h1>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="social">
+                                        <li><a href="https://facebook.com/uslugi.stolarskie.ziopaja"><i class="icon-facebook icon-social"></i>uslugi.stolarskie.ziopaja</a></li>
+                                        <li><a href="tel:503-720-068"><i class="icon-phone icon-social" style="color:green"></i>503 720 068</a></li>
+                                        <li><a href="mailto:ziopaja.jan@gmail.com"><i class="icon-envelope icon-social" style="color:red"></i>ziopaja.jan@gmail.com</a></li>
+                                    </ul>
                                 </div>
-                            </div> 
-                            <h5></h5>         
-                        </div>
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item responsive beton">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img class="img-thumbnail" src="images/portfolio/thumb/beton1.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="" href="images/portfolio/full/beton1.jpg"><i class="icon-eye-open"></i></a>        
-                                </div> 
                             </div>
-                            <h5></h5>          
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item responsive beton">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img class="img-thumbnail" src="images/portfolio/thumb/beton2.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="" href="images/portfolio/full/beton2.jpg"><i class="icon-eye-open"></i></a>          
-                                </div>   
-                            </div>
-                            <h5></h5>        
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item responsive beton">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img class="img-thumbnail" src="images/portfolio/thumb/beton3.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="" href="images/portfolio/full/beton3.jpg"><i class="icon-eye-open"></i></a>          
-                                </div>   
-                            </div>
-                            <h5></h5>        
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item responsive balustrady">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img class="img-thumbnail" src="images/portfolio/thumb/balustrady1.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="" href="images/portfolio/full/balustrady1.jpg"><i class="icon-eye-open"></i></a>          
-                                </div>  
-                            </div>
-                            <h5></h5>  
-                        </div>       
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item responsive balustrady">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img class="img-thumbnail" src="images/portfolio/thumb/balustrady2.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="" href="images/portfolio/full/balustrady2.jpg"><i class="icon-eye-open"></i></a>           
-                                </div>  
-                            </div>
-                            <h5></h5>         
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item responsive balustrady">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img class="img-thumbnail" src="images/portfolio/thumb/balustrady3.JPG" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="" href="images/portfolio/full/balustrady3.JPG"><i class="icon-eye-open"></i></a>           
-                                </div>  
-                            </div>
-                            <h5></h5>         
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                </ul>   
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
+                        </div><!--/.col-sm-6-->
+                        <div class="col-sm-6">
+                            
+                        </div><!--/.col-sm-6-->
+                    </div><!--/.row-->
+                </div><!--/.box-->
+            </div><!--/.container-->
+        </section><!--/#contact-->
 
-    <section id="contact">
-        <div class="container">
-            <div class="box last">
+        <footer id="footer">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Skontaktuj się z nami</h1>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <address>
-                                    <strong>Usługi Stolarskie Jan Ziopaja</strong><br>
-                                    Świętokrzyskie<br>
-                                    Kielce, Morawica<br>
-                                </address>
-                            </div>
-                        </div>
-                        <h1></h1>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="social">
-                                    <li><a href="https://facebook.com/uslugi.stolarskie.ziopaja"><i class="icon-facebook icon-social"></i>uslugi.stolarskie.ziopaja</a></li>
-                                    <li><a href="tel:503-720-068"><i class="icon-phone icon-social" style="color:green"></i>503 720 068</a></li>
-                                    <li><a href="mailto:ziopaja.jan@gmail.com"><i class="icon-envelope icon-social" style="color:red"></i>ziopaja.jan@gmail.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--/.col-sm-6-->
-                    <div class="col-sm-6">
-                        
-                    </div><!--/.col-sm-6-->
-                </div><!--/.row-->
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#contact-->
-
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2020 <a target="_blank" href="https://gridgum.com/themes/category/blog-themes/">Blog Themes</a> & ASolutions. All Rights Reserved.
+                        &copy; 2020 <a target="_blank" href="https://gridgum.com/themes/category/blog-themes/">Blog Themes</a> & ASolutions. All Rights Reserved.
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer><!--/#footer-->
-
+        </footer><!--/#footer-->
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
-</div>
-
-<script>
-    var vueApp = new Vue(
-        {
+    <script src="js/carousel-items.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script>
+        var vueApp = new Vue({
             el: '#app',
             data: {
-                carouselItemList: carouselItems
+                carouselItemList: carouselItems,
+                portfolioItemList: portfolio
             }
         });
-</script>
-
+    </script>
 </body>
 </html>
