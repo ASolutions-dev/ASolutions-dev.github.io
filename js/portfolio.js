@@ -36,7 +36,7 @@ var portfolio = [
     },
     {
         class: "portfolio-item responsive balustrady",
-        thumbnail: "images/portfolio/thumb/balustrady3.jpg",
-        image: "images/portfolio/full/balustrady3.jpg"
+        thumbnail: "images/portfolio/thumb/balustrady3.JPG",
+        image: "images/portfolio/full/balustrady3.JPG"
     }
 ]
