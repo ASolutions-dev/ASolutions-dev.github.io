@@ -74,24 +74,8 @@ a:focus {
   display: block !important;
   z-index: 1;
   text-align: center;
+  height: 100%;
 }
-
-#first-main-item {
-  background-image: url(../images/slider-bg-1-2.jpg);
-}
-
-#second-main-item {
-  background-image: url(../images/slider-bg-2-2.jpg);
-}
-
-#third-main-item {
-  background-image: url(../images/slider-bg-3-2.jpg);
-}
-
-#fourth-main-item {
-  background-image: url(../images/slider-bg-4-2.jpg);
-}
-
 #main-slider .item:first-child {
   top: auto;
   position: relative;
@@ -102,7 +86,7 @@ a:focus {
   -o-transition: opacity ease-in-out 500ms;
   -webkit-transition: opacity ease-in-out 500ms;
   transition: opacity ease-in-out 500ms;
-  z-index: 2;
+  /* z-index: 2; */
 }
 #main-slider .item.active h1 {
   -webkit-animation: scaleUp 400ms;
